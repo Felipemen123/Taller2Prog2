@@ -1,27 +1,37 @@
 package co.edu.unbosque.model;
 
-public class Ejercicio2 extends Thread {
+public class Ejercicio2  {
 
-	private static int[][] matriz;
-	private int ini, fin;
+	private static int n;
+	private static int d;
+	private static int[][] matriz = new int[n][d];
 
-	public Ejercicio2(int ini, int fin) {
-		this.ini = ini;
-		this.fin = fin;
+	public Ejercicio2(int n, int d) {
+		this.n = n;
+		this.d = d;
 	}
 
 	public Ejercicio2() {
 
 	}
 
-	public void run() {
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				
-			}
-		}
+
+
+	public static int getN() {
+		return n;
 	}
 
+	public static void setN(int n) {
+		Ejercicio2.n = n;
+	}
+
+	public static int getD() {
+		return d;
+	}
+
+	public static void setD(int d) {
+		Ejercicio2.d = d;
+	}
 
 	public static int[][] getMatriz() {
 		return matriz;
@@ -30,21 +40,7 @@ public class Ejercicio2 extends Thread {
 	public static void setMatriz(int[][] matriz) {
 		Ejercicio2.matriz = matriz;
 	}
-
-	public int getIni() {
-		return ini;
-	}
-
-	public void setIni(int ini) {
-		this.ini = ini;
-	}
-
-	public int getFin() {
-		return fin;
-	}
-
-	public void setFin(int fin) {
-		this.fin = fin;
-	}
-
+	
+	
+	
 }
