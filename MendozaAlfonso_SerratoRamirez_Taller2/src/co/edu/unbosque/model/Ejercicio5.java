@@ -1,28 +1,20 @@
 package co.edu.unbosque.model;
+import java.util.Scanner;
 
 public class Ejercicio5 {
 
-	private String palabra;
-	private String palabrainvertida = "";
-	
-	Ejercicio5(){
+	public void invertirPalabra() {
+		Scanner s = new Scanner(System.in);
+		String palabra;
+		String palabrainvertida = "";
+		System.out.println("Ingresa una palabra y se mostrara a la inversa:\n");
+		palabra = s.nextLine();
 		
-	}
+		for (int i = palabra.length()-1; i >= 0; i--) {
+			palabrainvertida = palabrainvertida + palabra.charAt(i);
+		}
 
-	public String getPalabra() {
-		return palabra;
-	}
-
-	public void setPalabra(String palabra) {
-		this.palabra = palabra;
-	}
-
-	public String getPalabrainvertida() {
-		return palabrainvertida;
-	}
-
-	public void setPalabrainvertida(String palabrainvertida) {
-		this.palabrainvertida = palabrainvertida;
+		System.out.println("La palabra invertida es:\n" + palabrainvertida);
 	}
 	
 	
